@@ -1,0 +1,62 @@
+@import "src/styles.scss";
+
+.app-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+}
+
+.content-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-and-text{
+  display: flex;
+}
+
+.store-badges{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 100px;
+}
+
+.description-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+.text-button {
+  //background: none!important;
+  //border: none;
+  //padding: 0!important;
+  //color: #069;
+  //text-decoration: underline;
+  //cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .app-card {
+    flex-direction: column;
+  }
+  .description-text{
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .logo-and-text{
+    flex-direction: column;
+  }
+}

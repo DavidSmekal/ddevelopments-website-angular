@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {PrivacyPolicyComponent} from "./pages/privacy-policy/privacy-policy.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  // other routes...
+  { path: 'dirty-charades-privacy', component: PrivacyPolicyComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
