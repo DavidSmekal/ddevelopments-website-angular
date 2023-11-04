@@ -2,61 +2,68 @@
 
 .app-card {
   align-items: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: row;
   padding: 20px;
+  margin-inline: auto;
 }
 
 .card-header {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   padding: 1em;
-  align-items: center;
+}
+
+.header-text{
+  font-size: clamp(.25rem, 5vw + .5rem, 2rem);
 }
 
 .content-container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  margin-inline: auto;
 }
 
-.logo-and-text{
-  display: flex;
+.logo-image {
+  width: clamp(20px, 100%, 350px);
+  margin-inline: auto;
 }
 
 .store-badges{
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  margin-left: 100px;
+  display: grid;
+  grid-auto-flow: row;
+  margin-inline: auto;
 }
 
 .description-text{
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  margin-left: 60px;
+  text-align: center;
 }
 
-.text-button {
-  //background: none!important;
-  //border: none;
-  //padding: 0!important;
-  //color: #069;
-  //text-decoration: underline;
-  //cursor: pointer;
-}
-
-
-@media (max-width: 600px) {
+@media (min-width: 1000px) {
   .app-card {
-    flex-direction: column;
+     width: 80%;
   }
-  .description-text{
-    margin-left: 0;
-    flex-direction: column;
+  .content-container{
+    padding: 0 150px;
   }
-  .logo-and-text{
+
+  .image-and-description{
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .logo-image{
+    width: 350px;
+    margin-inline: 0;
+  }
+
+  .store-badges{
+    display: flex;
     flex-direction: column;
+    align-self: flex-start;
+    margin-left: 100px;
   }
 }

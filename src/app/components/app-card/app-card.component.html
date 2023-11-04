@@ -1,27 +1,39 @@
 <div class="app-card">
-  <p-card >
+  <p-card>
     <p-header>
       <div class="card-header">
-        <span class="header-text">Dirty Charades</span>
-        <p-button [text]="true" label="Privacy Policy" routerLink="dirty-charades-privacy"></p-button>
+        <span class="header-text">{{title}}</span>
+        <p-button *ngIf="privacyPolicyLink" [text]="true" label="Privacy Policy"
+                  routerLink="{{privacyPolicyLink}}"></p-button>
       </div>
     </p-header>
     <div class="content-container">
-      <div class="logo-and-text">
-          <p-image src="assets/app-logos/dirty_charades.png" alt="Image" width="350"></p-image>
+      <div class="image-and-description">
+        <div class="logo-image">
+          <p-image [preview]="false" src="{{logoLink}}" alt="Image" width="100%"></p-image>
+        </div>
         <div class="description-text">
           <p-panel [showHeader]=false>
             <span>
-              A fun word guessing party game.
+              {{description}}
             </span>
           </p-panel>
         </div>
       </div>
+
       <div class="store-badges">
-          <p-image src="assets/platform-badges/google_badge.png" alt="Image" width="160"></p-image>
-          <p-image src="assets/platform-badges/apple_badge.png" alt="Image" width="160"></p-image>
+        <a *ngIf="googlePlayLink" href="{{googlePlayLink}}">
+          <p-image  [preview]="false"  src="assets/platform-badges/google_badge.png" alt="Image" width="160"></p-image>
+        </a>
+        <a *ngIf="appleStoreLink" href="{{appleStoreLink}}">
+          <p-image  [preview]="false" src="assets/platform-badges/apple_badge.svg" alt="Image" width="160"></p-image>
+        </a>
+        <a *ngIf="amazonStoreLink" href="{{amazonStoreLink}}">
+          <p-image [preview]="false" src="assets/platform-badges/amazon_badge.png" alt="Image" width="160"></p-image>
+        </a>
       </div>
     </div>
 
   </p-card>
 </div>
+

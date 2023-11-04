@@ -1,8 +1,11 @@
-<p-menubar [model]="items">
+<p-menubar>
   <ng-template pTemplate="start">
-    <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+    <div class="top-left-logo">
+      <p-button label="DDevelopments" [text]="true" [plain]="true" routerLink=""></p-button>
+    </div>
+
   </ng-template>
   <ng-template pTemplate="end">
-    <span>About Us</span>
+    <p-button label="About Us" [text]="true" [plain]="true" routerLink="about"></p-button>
   </ng-template>
 </p-menubar>

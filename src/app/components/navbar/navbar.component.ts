@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
           {
             label: 'DDevelopments',
             icon: 'pi pi-fw pi-file',
+            routerLink: '',
           },
         ];
     }
