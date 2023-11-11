@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "ddevelopments-website-angular",
+            "baseHref": "/ddevelopments-website-angular/",
             "outputPath": "dist/ddevelopments-website-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
