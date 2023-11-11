@@ -17,8 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/ddevelopments-website-angular/",
-            "outputPath": "dist/ddevelopments-website-angular",
+            "baseHref": "/davidsmekal.github.io/",
+            "outputPath": "dist/davidsmekal.github.io",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
