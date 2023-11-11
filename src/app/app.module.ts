@@ -20,6 +20,7 @@ import { SkiTrackrPrivacyComponent } from './pages/privacy-policies/ski-trackr-p
 import { FiveSecondChallengePrivacyComponent } from './pages/privacy-policies/five-second-challenge-privacy/five-second-challenge-privacy.component';
 import { PianoSightReadingPrivacyComponent } from './pages/privacy-policies/piano-sight-reading-privacy/piano-sight-reading-privacy.component';
 import { DirtyTruthOrDarePrivacyComponent } from './pages/privacy-policies/dirty-truth-or-dare-privacy/dirty-truth-or-dare-privacy.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, AppComponent, AppCardComponent, DirtyCharadesPrivacyComponent, HomePageComponent, AboutUsComponent, FamilyCharadesPrivacyComponent, SkiTrackrPrivacyComponent, FiveSecondChallengePrivacyComponent, PianoSightReadingPrivacyComponent, DirtyTruthOrDarePrivacyComponent],
@@ -33,6 +34,7 @@ import { DirtyTruthOrDarePrivacyComponent } from './pages/privacy-policies/dirty
     CardModule,
     ImageModule,
     PanelModule,
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent],
