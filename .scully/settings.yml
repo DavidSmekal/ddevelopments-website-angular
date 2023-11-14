@@ -1,11 +1,11 @@
-identifier: l5o4ufg26an7f1g4
+identifier: l7o5yenbuaj46a33
 appPort: 1864
 staticPort: 1668
 reloadPort: 2667
 hostName: localhost
 projectName: ddevelopments-website-angular
 homeFolder: C:\Development\ddevelopments-website-angular
-distFolder: dist/davidsmekal.github.io
+distFolder: dist/ddevelopments-website-angular
 outDir: C:\Development\ddevelopments-website-angular\dist\static\
 handle404: ''
 allowErrorCollect: false
